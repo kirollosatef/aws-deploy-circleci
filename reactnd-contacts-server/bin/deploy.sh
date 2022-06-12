@@ -1,1 +1,1 @@
-eb deploy
+eb deploy reactnd-contacts-server-dev
