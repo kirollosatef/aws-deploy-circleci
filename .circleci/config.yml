@@ -8,6 +8,7 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
+      - aws-cli/setup
       - checkout
       - run:
           name: install yarn
@@ -28,3 +29,7 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run:
+          name: Front-End deploy
+          command: |
+            npm run frontend:deploy
