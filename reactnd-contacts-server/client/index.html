@@ -11,7 +11,7 @@
   </body>
   <script>
     const showContacts = () => {
-      fetch("http://localhost:4000/contacts", {
+      fetch("http://reactnd-contacts-server-dev2.us-east-1.elasticbeanstalk.com/contacts", {
         headers: { Authorization: "whatever-you-want" },
       })
       .then(res => res.json())
